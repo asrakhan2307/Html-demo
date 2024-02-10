@@ -1,0 +1,35 @@
+*{ font-style: italic; } 
+.back{ 
+    display: block;
+    background-color: green;
+    height: 50px; 
+    width:50%; 
+    margin: 10px;
+} 
+ .back1{ 
+    background-color: rgb(107, 155, 29); 
+    color: red;
+    height: 100px; 
+    width:50%; 
+    margin: 10px;
+    display: inline;   
+} 
+.back2{ 
+    display: inline-block; 
+    background-color: pink; 
+    height: 100px; 
+    width:200px; 
+} 
+.back3{ 
+    display: inline;
+    background-color: yellow; 
+    height: 100px; 
+    width:200%; 
+} 
+/* .first{ 
+    /* background-image: url('/02.2DisplayProperties/first.jpg');  
+    background-repeat: repeat-x; 
+    background-repeat: repeat-y; 
+    /* background-repeat: no-repeat;  */
+    /* background-attachment: fixed;  
+} */

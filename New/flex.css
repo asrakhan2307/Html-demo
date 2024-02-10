@@ -1,0 +1,28 @@
+.main{
+    background-color: yellow;
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.box1,.box2,.box3{
+    /* height: 200px; */
+    width: 200px;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: blue;
+}
+
+.box3{
+    background-color: green;
+    /* flex-grow: 1; */
+}

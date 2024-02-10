@@ -1,0 +1,36 @@
+.main{
+    background: #CAE9FF;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 100vh;
+    height: 100vh;
+    width: auto;
+    /* padding: 20px; */
+    /* margin: 10px 10px 20px 30px; */
+    /* grid-template-rows: 200px; */
+}
+.label{
+    font-size: 40px;
+}
+.box1{
+    background: #1b4965;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.box2{
+    background:  #5fade3;
+    height: 50px;
+    grid-column-start: 2;
+    padding: 20px;
+    font-size: 40px;
+}
+.box3{
+    background:  #5fade3;
+    height: 30px;
+    padding: 30px;
+    font-size: 20px;
+}
+.nav-img {
+    height: 25px;
+}

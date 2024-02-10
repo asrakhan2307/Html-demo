@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Tag Example</title>
+  </head>
+  <body>
+    <h1>Task Progress</h1>
+
+    <label for="task-progress">Task Progress:</label>
+    <progress id="task-progress" value="30" max="100"></progress>80%
+
+    <p id="progress-value">Progress: 30%</p>
+
+    <button onclick="updateProgress()">Update Progress</button>
+
+    <script>
+      function updateProgress() {
+        var progress = document.getElementById("task-progress");
+        var value = Math.min(progress.value + 10, progress.max);
+        progress.value = value;
+
+        var progressValueText = document.getElementById("progress-value");
+        progressValueText.innerText = "Progress: " + value + "%";
+      }
+    </script>
+  </body>
+</html>

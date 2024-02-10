@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APIs and Features Example</title>
+  <!-- <style>
+    #drop-area {
+      width: 300px;
+      height: 200px;
+      border: 2px dashed #ccc;
+      text-align: center;
+      line-height: 200px;
+      font-size: 18px;
+    }
+  </style> -->
+</head>
+<body>
+
+  <h1>APIs and Features Example</h1>
+
+  <h2>Geolocation:</h2>
+  <p id="geo-demo">Click the button to get your location.</p>
+  <button onclick="getLocation()">Get Location</button>
+
+  <h2>Drag and Drop:</h2>
+  <div id="drop-area" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
+    Drop files here
+  </div>
+
+  <h2>Local Storage:</h2>
+  <p id="storage-demo">Local storage value: <span id="storage-value"></span></p>
+  <input type="text" id="storage-input" placeholder="Enter a value">
+  <button onclick="saveToLocalStorage()">Save to Local Storage</button>
+
+  <h2>Web Workers:</h2>
+  <p id="worker-demo">Calculating in the background...</p>
+
+  <script>
+    // Geolocation
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        document.getElementById("geo-demo").innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+
+    function showPosition(position) {
+      document.getElementById("geo-demo").innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+    }
+
+    // Drag and Drop
+    function dropHandler(event) {
+      event.preventDefault();
+      var files = event.dataTransfer.files;
+      // Handle dropped files here
+      console.log("Dropped files:", files);
+    }
+
+    function dragOverHandler(event) {
+      event.preventDefault();
+    }
+
+    // Local Storage
+    function saveToLocalStorage() {
+      var value = document.getElementById("storage-input").value;
+      localStorage.setItem("exampleValue", value);
+      document.getElementById("storage-value").innerText = value;
+    }
+
+    // Retrieve value from local storage on page load
+    document.getElementById("storage-value").innerText = localStorage.getItem("exampleValue");
+
+    // Web Workers
+    var worker = new Worker("worker.js");
+
+    worker.onmessage = function(event) {
+      document.getElementById("worker-demo").innerText = "Calculation result: " + event.data;
+    };
+
+    worker.postMessage({ value: 5 }); // Send data to the worker
+  </script>
+
+</body>
+</html>

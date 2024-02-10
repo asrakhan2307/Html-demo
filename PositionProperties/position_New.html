@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .container {
+            background-color: greenyellow;
+            border: 2px solid gray;
+            padding: 5px;
+            height: 200vh;
+        }
+        .box{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 2px solid red;
+        }
+        #box3{
+            /* Static by default according to DOM */
+            /* position:static; */
+            
+            /* Relative to its normal position and will leave a gap on its original position */
+            /* position: relative;
+            top: 134px;
+             
+            right:50px; */
+
+            /* Absolute to its parents position */
+            /* position: absolute;
+            top: 34px;
+            left: 44px;  */
+
+            /* Fixed position on screen */
+            /* position: fixed;
+            right: 40px;
+            top: 150px;  */
+
+            /* Sticky position */
+            position: sticky;
+            top: 400px;
+            right: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    
+</body>
+</html>

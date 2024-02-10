@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        text-align: center;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .product {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+      }
+
+      .product img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to our Ecommerce Store</h1>
+    </header>
+    <div class="container">
+      <article class="product">
+        <img src="/01.HTML_Only/fountainPen.jfif" alt="Product 1" />
+        <h2><a href="product1.html">Product 1</a></h2>
+        <p>Description of Product 1. Ball Pen.</p>
+        <p>Price: $1.99</p>
+      </article>
+
+      <article class="product">
+        <img src="/01.HTML_Only/gelPen.jfif" alt="Product 2" />
+        <h2><a href="product2.html">Product 2</a></h2>
+        <p>Description of Product 2. Gel Pen.</p>
+        <p>Price: $2.99</p>
+      </article>
+
+      <article class="product">
+        <img src="/01.HTML_Only/fountainPen.jfif" alt="Product 3" />
+        <h2><a href="product3.html">Product 3</a></h2>
+        <p>Description of Product 3. Fountain Pen.</p>
+        <p>Price: $3.99</p>
+      </article>
+    </div>
+    <footer>
+      <p>&copy; 2023 Ecommerce Store. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

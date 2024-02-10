@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation Menu</title>
+  <style>
+    /* Default styles for the navigation menu */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    li {
+      margin-right: 20px;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+      ul {
+        display: none; /* Hide the menu by default on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: yellow;
+      }
+
+      li {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Show the menu when the checkbox is checked */
+      #menuToggle:checked + ul {
+        display: flex;
+      }
+
+      .burger-icon {
+        display: block; /* Show the burger icon on smaller screens */
+      }
+    }
+
+    /* Burger icon styles */
+    .burger-icon {
+      cursor: pointer;
+      display: none; /* Hide the burger icon by default on larger screens */
+    }
+
+    /* Hide the checkbox visually */
+    #menuToggle {
+      display: none;
+    }
+
+    /* Style the burger icon using the label */
+    .burger-icon::before {
+      content: '\2630'; /* Unicode character for the hamburger icon */
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="burger-icon"></label>
+    <i class="fa-solid fa-bars"></i>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+</body>
+</html>

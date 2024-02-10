@@ -1,0 +1,24 @@
+.first{ 
+    position:absolute; 
+    height: 100px; 
+    width: 100px; 
+    background-color: yellowgreen; 
+    border: 5px solid red; 
+    z-index: 1; 
+} 
+.second{ 
+    position: relative; 
+    height: 40px; 
+    width: 400px; 
+    background-color: yellow; 
+    border: 5px solid grey; 
+    z-index: -5; 
+} 
+.third{ 
+    position:sticky; 
+    height: 30px; 
+    width: 100px; 
+    background-color: violet; 
+    border:5px solid pink; 
+    z-index: 10; 
+}

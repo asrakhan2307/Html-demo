@@ -1,0 +1,30 @@
+.header{
+    background-color: yellow;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.header i{
+    color: white;
+    /* visibility: hidden; */
+    display: none;
+}
+/* .fa-solid{
+    display: none;
+} */
+
+
+@media screen and (max-width: 768px) {
+    /* .header{
+        background-color:green;
+    } */
+    .list{
+        display: none;
+    }
+    .fa-solid{
+        display: block;
+        visibility: visible;
+    }
+} 

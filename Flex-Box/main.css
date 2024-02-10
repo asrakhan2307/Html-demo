@@ -1,0 +1,39 @@
+.parent1{ 
+    display: flex; 
+    /* flex-direction: column; */
+    border: 2px solid green; 
+    padding: 10px; 
+    height: 100vh;
+    /* flex-wrap:wrap;  */
+    justify-content: space-around;
+    align-items:center;
+}
+/* .parent2{ 
+    display: flex; 
+    flex-direction: row; /*by default row 
+    border: 2px solid green; 
+    padding: 10px; 
+} 
+.parent3{ 
+    display: flex; 
+    flex-direction: row-reverse; 
+    border: 2px solid green; 
+    padding: 10px; 
+} 
+.parent4{ 
+    display: flex; 
+    flex-direction: column; 
+    border: 2px solid green; 
+    padding: 10px; 
+} 
+.parent5{ 
+    display: flex; 
+    flex-direction: column-reverse; 
+    border: 2px solid green; 
+    padding: 10px; 
+} */
+.child1{ 
+    border: 2px solid red; 
+    padding: 10px; 
+    margin: 5px; 
+}
